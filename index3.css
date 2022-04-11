@@ -1,0 +1,45 @@
+body {
+    background-image: url("blackjackbg.jpeg");
+    background-size: cover;
+}
+ 
+h1 {
+    color: azure;
+    text-align-last: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+p{
+    color: azure;
+    text-align: center;
+}
+button{
+    padding: 25px 46px;
+    font-size: 28;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    outline: none;
+    color: #fff;
+    background-color: #3ba0b7;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px #6f9fd97c;
+    position: absolute;
+    margin-left: 25%;
+    
+ }
+
+button:hover{
+    background-position-x:34%;
+    background-color:#2d8498;opacity:0.9;
+    ;
+}
+button:active{
+    box-shadow:0 5px #2d8498;
+    background-color: #3ba0b7;
+    transform: translateY(4px);
+    
+}
+.newcard-btn{
+    padding: 25px 56px;
+}
