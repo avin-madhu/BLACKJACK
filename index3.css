@@ -1,16 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body {
-    background-image: url("blackjackbg.jpeg");
+    background: #082c34;
     background-size: cover;
+    background-repeat: no-repeat;
 }
  
+.main-nav{
+    height: 20px;
+    background-color: black;
+
+}
 h1 {
     color: azure;
-    text-align-last: center;
+    text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size: 400%;
 }
 p{
     color: azure;
-    text-align: center;
+   text-align: center;
+   font-size: larger;
+}
+.container{
+    
+    
 }
 button{
     padding: 25px 46px;
@@ -24,15 +41,18 @@ button{
     border: none;
     border-radius: 15px;
     box-shadow: 0 10px #6f9fd97c;
-    position: absolute;
-    margin-left: 25%;
-    
+    margin: auto;  
+    position: sticky;
+    display: flex;
+    flex-direction: column;
  }
-
+.startgame-btn{
+    margin-top: 20px;
+}
 button:hover{
     background-position-x:34%;
     background-color:#2d8498;opacity:0.9;
-    ;
+    
 }
 button:active{
     box-shadow:0 5px #2d8498;
@@ -41,5 +61,6 @@ button:active{
     
 }
 .newcard-btn{
-    padding: 25px 56px;
+    padding: 25px 53px;
+    
 }
