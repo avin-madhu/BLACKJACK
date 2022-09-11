@@ -1,1 +1,6 @@
-# firstjs-repo
+# BlackJack-Game
+
+
+### Current status: in progress
+  
+ 
