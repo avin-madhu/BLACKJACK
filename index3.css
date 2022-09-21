@@ -10,7 +10,7 @@ body {
 }
  
 .main-nav{
-    height: 20px;
+    height: 50px;
     background-color: black;
 
 }
@@ -24,6 +24,8 @@ p{
     color: azure;
    text-align: center;
    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    padding: 3px;
 }
 .container{
     
@@ -61,6 +63,9 @@ button:active{
     
 }
 .newcard-btn{
-    padding: 25px 53px;
+     position: absolute;
+    left: 562px; 
+    top: 400px;
+    
     
 }
