@@ -44,6 +44,7 @@
      }
     .startgame-btn{
         padding-top: 20px;
+        
     }
     button:hover{
         background-position-x:34%;
@@ -119,6 +120,7 @@ button{
  }
 .startgame-btn{
     margin-top: 20px;
+    padding-block: 23px;
 }
 button:hover{
     background-position-x:34%;
