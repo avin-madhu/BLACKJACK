@@ -13,17 +13,26 @@
         <br>
         <div class="container">
             <h1 class="blackjack-title">BLACKJACK</h1>
+         <div class="border-items">
+            <P id="message-el">Want to play a round?</P>
+            <P id="cards-el">Cards: </P>
+            <P id="sum-el">Sum: </P>
+         </div>
+       
+         <div class="buttonalign">
+            <button class="startgame-btn" id="Startgame-Button"onclick="startgame()">START GAME</button>
+            <BR><BR><BR><BR><BR><BR>
+           
+                <button id="newcard-btn" class="newcard-btn" onclick="newcard()">NEW CARD</button>
 
-        <P id="message-el">Want to play a round?</P>
-        <P id="cards-el">Cards: </P>
-        <P id="sum-el">Sum: </P>
+                <button class="replay-btn" onclick="replay()">REPLAY</button>
+         </div>
 
-        <button class="startgame-btn" onclick="startgame()">START GAME</button>
-        <BR><BR><BR><BR><BR><BR>
-        <button id="newcard-btn" class="newcard-btn" onclick="newcard()">NEW CARD</button>
         </div>
 
         <script src="index3.js"></script>
+
+        
 
     </body>
 </head>

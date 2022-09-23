@@ -17,6 +17,20 @@ function getrandomcard(){
 function startgame(){
     rendergame()
 }
+function replay(){
+
+    sum = 0
+    messageEl.textContent="click START GAME to start"
+    for(let i=0; i<cardsarray.length;i++)
+    {
+        cardsarray[i]=
+      cardsEl.textContent=''
+    }
+
+   message.textContent="Click NEW CARD to draw a card"
+   sumEl.textContent= "Sum: "
+   cardsEl.textContent="Cards: "
+}
 
 
 function rendergame(){
@@ -29,7 +43,7 @@ function rendergame(){
     }
 
 if (sum<=20){
-    message="Do you want to draw a card?"
+    message="click NEW CARD to draw a card"
 }else if (sum===21){
     message="BLACKJACK!!"
     won = true

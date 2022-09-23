@@ -2,7 +2,78 @@
     padding: 0;
     margin: 0;
 }
+@media screen and (min-width:400px)
+{
+    
+    
+    .main-nav{
+        height: 50px;
+        background-color: black;
+    }
+    
+    h1 {
+        color: azure;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+        font-size: 400%;
+        margin-bottom: 40px;
+    }
+    p{
+        color: azure;
+       text-align: center;
+       font-size: larger;
+       padding: 3px;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    button{
+        padding: 25px 46px;
+        font-size: 28;
+        cursor: pointer;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        outline: none;
+        color: #fff;
+        background-color: #3ba0b7;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 10px #6f9fd97c;
+        margin: auto;  
+        flex-direction: column;
 
+     }
+    .startgame-btn{
+        padding-top: 20px;
+    }
+    button:hover{
+        background-position-x:34%;
+        background-color:#2d8498;opacity:0.9;
+        
+    }
+    button:active{
+        box-shadow:0 5px #2d8498;
+        background-color: #3ba0b7;
+        transform: translateY(4px);
+        
+    }
+    .newcard-btn{
+       position: relative;
+         padding: 50px;
+    }
+    .border-items{
+        border: solid white;
+        margin-right: 400px;
+        margin-left:400px;
+    }
+    .replay-btn
+{
+    padding-right: 60px;
+    margin-top: 20px;
+    padding-inline: 59px;
+    padding-block: 20px;
+} 
+    
+}
 body {
     background: #082c34;
     background-size: cover;
@@ -12,25 +83,23 @@ body {
 .main-nav{
     height: 50px;
     background-color: black;
-
 }
+
 h1 {
     color: azure;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     font-size: 400%;
+    margin-bottom: 40px;
 }
 p{
     color: azure;
    text-align: center;
    font-size: larger;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-    padding: 3px;
+   padding: 3px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.container{
-    
-    
-}
+
 button{
     padding: 25px 46px;
     font-size: 28;
@@ -63,9 +132,21 @@ button:active{
     
 }
 .newcard-btn{
-     position: absolute;
-    left: 562px; 
-    top: 400px;
-    
-    
+margin-top: -90px;
+padding-bottom: 30px;
+padding-block: 22px;
+padding-inline: 50px;
 }
+
+.buttonalign{
+    display: flex;
+    flex-direction: column;
+    position: auto;
+ }
+ .replay-btn
+{
+    padding-right: 30px;
+    margin-top: 20px;
+    padding-inline: 59px;
+    padding-block: 20px;
+} 
