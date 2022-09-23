@@ -5,6 +5,7 @@ let won=false
 let message=""
 let isalive=true
 let sum= firstcard+secondcard
+let startclicked=0
 
 let messageEl=document.getElementById("message-el")
 let sumEl=document.getElementById("sum-el")
@@ -16,10 +17,12 @@ function getrandomcard(){
 
 function startgame(){
     rendergame()
+    startclicked=1
 }
 function replay(){
 
     sum = 0
+    startclicked=0
     messageEl.textContent="click START GAME to start"
     for(let i=0; i<cardsarray.length;i++)
     {
@@ -56,10 +59,13 @@ if (sum<=20){
 }
 
 function newcard(){
-   let thirdcard= getrandomcard()
+   if(startclicked==1)
+   {
+    let thirdcard= getrandomcard()
    sum+=thirdcard
    cardsarray.push(thirdcard)
    rendergame()
+   }
 }
 
 
