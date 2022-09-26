@@ -9,12 +9,20 @@
     </head>
 
     <body>
-        <nav class="main-nav"></nav>
+        <nav class="main-nav">
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a class="sidepanel-items"href="About.html">About</a>
+                <a class="sidepanel-items" href="HowtoPlay.html">How to play</a>
+                
+              </div>
+            <button class="openbtn" onclick = "openNav()">☰</button>
+        </nav>
         <br>
         <div class="container">
             <h1 class="blackjack-title">BLACKJACK</h1>
          <div class="border-items">
-            <P id="message-el">Want to play a round?</P>
+            <P id="message-el">Click Start to play</P>
             <P id="cards-el">Cards: </P>
             <P id="sum-el">Sum: </P>
          </div>
