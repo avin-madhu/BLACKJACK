@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to play</title>
+    <link rel="stylesheet" href="index3.css">
+    
+</head>
+<nav class="main-nav">
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a class="sidepanel-items"href="About.html">About</a>
+        <a class="sidepanel-items" href="HowtoPlay.html">How to play</a>
+        
+      </div>
+    <button class="openbtn" onclick = "openNav()">☰</button>
+</nav>
+<body>
+    <h1 class="heading-htp">How to play</h1>
+
+<div class="rule-box">
+    <p class="descript">The game starts by drawing two random cards between 1 and 13. If these two drawn card's sum is equal to 21, Then you won (objective of the game) else you continue drawing another card until the total sum of the drawn cards is
+        is greater than or equal to 21, if the total sum becomes more than 21 then you lose.
+        
+    </p>
+
+</div>
+<style>
+    body{
+        padding: 0;
+        margin: 0%;
+        background: #082c34;
+        padding-bottom: 20px;
+    }
+    .heading-htp{
+        text-align: center;
+        font-size: xxx-large;
+        
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .rule-box{
+        height: 50%;
+        margin-bottom: 90px;
+        
+        width: 70%;
+        background-color: rgb(47, 86, 134);
+        align-items: center;
+        justify-content: center;
+        
+        margin: auto;
+        border-radius: 20px;
+
+       
+    }
+    .descript{
+        margin: 20px;
+        margin-block: 5px;
+    }
+    
+</style>
+<script src="index3.js"></script>
+</body>
+</html>
