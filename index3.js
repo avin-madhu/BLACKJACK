@@ -6,21 +6,31 @@ let message=""
 let isalive=true
 let sum= firstcard+secondcard
 let startclicked=0
+let cashWithdrawn=document.getElementById("CashWithDrawn")
+let cashNow =0
+let cashSum =0
+let WonMessage = document.getElementById("marqueeTag")
 
 let messageEl=document.getElementById("message-el")
 let sumEl=document.getElementById("sum-el")
 let cardsEl=document.getElementById("cards-el")
 
 function getrandomcard(){
-    return Math.floor(Math.random()*13)
+    return Math.floor(Math.random()*14)
 }
 
 function startgame(){
+  
+   if(isalive==true)
+   {
+    cashUpdate()
+   }
     rendergame()
     startclicked=1
 }
 function replay(){
-
+    
+  messageEl.style.color='white'
     sum = 0
     startclicked=0
     messageEl.textContent="click START GAME to start"
@@ -33,6 +43,11 @@ function replay(){
    message.textContent="Click NEW CARD to draw a card"
    sumEl.textContent= "Sum: "
    cardsEl.textContent="Cards: "
+   cashSum=0
+   cashWithdrawn.textContent= "Cash withdrawn: "
+   isalive=true
+
+   
 }
 
 function openNav() {
@@ -56,9 +71,11 @@ function rendergame(){
 if (sum<=20){
     message="click NEW CARD to draw a card"
 }else if (sum===21){
+  messageEl.style.color="#11fa04"
     message="BLACKJACK!!"
     won = true
 }else{
+    messageEl.style.color="red"
     message="You Lost :("
     isalive=false
 }
@@ -67,13 +84,37 @@ if (sum<=20){
 }
 
 function newcard(){
+
+  
    if(startclicked==1)
    {
     let thirdcard= getrandomcard()
    sum+=thirdcard
    cardsarray.push(thirdcard)
    rendergame()
+   if(isalive==true)
+   {
+    cashUpdate()
    }
+   }
+  
 }
+
+function cashUpdate()
+{
+  cashNow=1000
+  cashSum+=cashNow
+  cashWithdrawn.textContent="Cash withdrawn: "+cashSum+" $";
+  if(won==true)
+  {
+    cashSum+=100000
+    cashWithdrawn.textContent="Cash withdrawn: "+cashSum;
+    WonMessage.style.color="white"
+  }
+}
+
+
+
+
 
 

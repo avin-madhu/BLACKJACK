@@ -73,6 +73,16 @@
     padding-inline: 59px;
     padding-block: 20px;
 } 
+
+.footer{
+    height: 100px;
+    width: 100%;
+    background-color: #000000;
+   position: absolute;
+   bottom: 0px;
+  
+}
+
     
 }
 body {
@@ -228,3 +238,27 @@ padding-inline: 51px;
     padding-inline: 61px;
     padding-block: 20px;
 } 
+
+.footer{
+    height: 55px;
+    width: 100%;
+    background-color: #000000;
+   position: absolute;
+   bottom: 0%;
+   align-content: center;
+   justify-content: center;
+
+}
+.highScore{
+    color:rgb(255, 255, 255);
+   align-content: center;
+   justify-content: center;
+   padding-left: 20px;
+
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#marqueeTag
+{
+    color: #010101;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
