@@ -78,8 +78,7 @@
     height: 100px;
     width: 100%;
     background-color: #000000;
-   position: absolute;
-   bottom: 0px;
+    padding-bottom: 0px;
   
 }
 
@@ -243,8 +242,8 @@ padding-inline: 51px;
     height: 55px;
     width: 100%;
     background-color: #000000;
-   position: absolute;
-   padding-bottom: 0;
+
+   bottom: 0px;
    align-content: center;
    justify-content: center;
 
