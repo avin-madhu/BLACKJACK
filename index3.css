@@ -220,12 +220,12 @@ padding-inline: 51px;
   right: 0;
   padding: 15px;
   height: 50px;
-  
    transform: none;
 
 }
 
 .buttonalign{
+    
     display: flex;
     flex-direction: column;
     position: auto;
@@ -239,13 +239,12 @@ padding-inline: 51px;
 } 
 
 .footer{
-    height: 55px;
-    width: 100%;
-    background-color: #000000;
+   height: 50px;
+   width: 100%;
+  background-color: #000000;
+  
 
-   bottom: 0px;
-   align-content: center;
-   justify-content: center;
+ 
 
 }
 .highScore{
