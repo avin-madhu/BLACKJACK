@@ -21,7 +21,7 @@ function getrandomcard(){
 
 function startgame(){
   
-   if(isalive==true)
+   if(startclicked==0)
    {
     cashUpdate()
    }
@@ -96,7 +96,12 @@ function newcard(){
    {
     cashUpdate()
    }
+   else
+   {
+    WonMessage.style.color="black"
    }
+   }
+  
   
 }
 
@@ -109,7 +114,11 @@ function cashUpdate()
   {
     cashSum+=100000
     cashWithdrawn.textContent="Cash withdrawn: "+cashSum;
+   if(isalive==true)
+   {
     WonMessage.style.color="white"
+   }
+  
   }
 }
 
