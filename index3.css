@@ -1,7 +1,11 @@
 *{
     padding: 0;
     margin: 0;
+   
 }
+
+
+
 @media screen and (min-width:400px)
 {
     
@@ -238,12 +242,15 @@ padding-inline: 51px;
     padding-block: 20px;
 } 
 
-.footer{
-   height: 50px;
+#FooterBar{
+  
    width: 100%;
-  background-color: #000000;
+  background-color: #020000;
   padding: 0px;
-  margin: 0;
+  margin-bottom: 0px;
+  position: absolute;
+  bottom: -205px;
+  
 
  
 
