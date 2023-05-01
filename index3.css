@@ -6,7 +6,7 @@
 
 
 
-@media screen and (max-width:400px)
+@media screen and (min-width:900px)
 {
     
     .main-nav{
@@ -93,6 +93,7 @@
 /* ------------for phone------------ */
 
 body {
+    background-color: #2d8498;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -279,16 +280,16 @@ body {
     background-image: url("bgPhone.jpeg");
     background-size: cover;
   }
-  
-  /* Background image for phone */
-  @media only screen and (max-width: 767px) {
+
+  @media only screen and (max-width: 468px)
+  {
     body {
-      background-image: linear-gradient(top to bottom, black to rgb(107, 107, 255));
-      background-size: 100%;
-    }
+        background-color: #000000;
+        background-image: url("bgPhone.jpg");
+      }
   }
   
-  /* Background image for desktop */
+  
   @media only screen and (min-width: 768px) {
     body {
       background-image: url("bgDesk.jpeg");
