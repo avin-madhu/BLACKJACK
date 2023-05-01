@@ -6,9 +6,8 @@
 
 
 
-@media screen and (min-width:900px)
+@media screen and (max-width:400px)
 {
-    
     
     .main-nav{
         height: 50px;
@@ -87,12 +86,22 @@
     background-color: #000000;
     padding-bottom: 0px;
   
-}
-
+  }
     
 }
+
+
+@media screen and (max-width:400px)
+  {
+     body{
+      background-image: url("bgPhone.jpg");
+     }
+  }
+
+/* ------------for phone------------ */
+
 body {
-    background: #082c34;
+    background-image: url("bgDesk.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -272,3 +281,26 @@ padding-inline: 51px;
     color: #010101;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+
+
+body {
+    background-image: url("bgPhone.jpeg");
+    background-size: cover;
+  }
+  
+  /* Background image for phone */
+  @media only screen and (max-width: 767px) {
+    body {
+      background-image: url("bgPhone.jpg");
+      background-size: 100%;
+    }
+  }
+  
+  /* Background image for desktop */
+  @media only screen and (min-width: 768px) {
+    body {
+      background-image: url("bgDesk.jpeg");
+    }
+  }
+  
