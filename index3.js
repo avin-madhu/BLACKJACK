@@ -39,15 +39,19 @@ function getrandomcard(){
 
 function startgame(){
   
-   if(startclicked==0)
-   {
-    cashUpdate()
-   }
-    rendergame()
-    startclicked=1
+  if(won==false)
+  {
+    if(startclicked==0)
+    {
+     cashUpdate()
+    }
+     rendergame()
+     startclicked=1
+  }
 }
 function replay(){
-    
+
+  won = false;  
   messageEl.style.color='white'
     sum = 0
     startclicked=0
@@ -97,9 +101,12 @@ if (sum<=20){
     message="BLACKJACK 🎉 ";
     winSound.play()
     won = true
+    cashSum=0
+    cashNow=0
 }else{
     messageEl.style.color="red"
     message="You Lost 😢 " 
+    won = false
     loseSound.play()
     isalive=false
     cashNow=0;
@@ -115,6 +122,8 @@ if(isalive==true)
   function newcard(){
 
   
+   if(won==false)
+   {
     if(startclicked==1)
     {
      let thirdcard= getrandomcard()
@@ -130,6 +139,7 @@ if(isalive==true)
      WonMessage.style.color="black"
     }
     }
+   }
  }
 }
 
