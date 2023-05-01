@@ -95,10 +95,12 @@ if (sum<=20){
 }else if (sum===21){
   messageEl.style.color="#11fa04"
     message="BLACKJACK 🎉 ";
+    winSound.play()
     won = true
 }else{
     messageEl.style.color="red"
     message="You Lost 😢 " 
+    loseSound.play()
     isalive=false
     cashNow=0;
     cashSum=0;
