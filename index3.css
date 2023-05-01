@@ -6,7 +6,7 @@
 
 
 
-@media screen and (min-width:400px)
+@media screen and (min-width:900px)
 {
     
     
@@ -19,7 +19,7 @@
         color: azure;
         text-align: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-        font-size: 400%;
+        font-size: 350%;
         margin-bottom: 40px;
     }
     p{
@@ -44,7 +44,10 @@
         box-shadow: 0 10px #6f9fd97c;
         margin: auto;  
         flex-direction: column;
+     }
 
+     .blackjack-title{
+        font-size: 2.6rem;
      }
     .startgame-btn{
         padding-top: 20px;
@@ -243,17 +246,12 @@ padding-inline: 51px;
 } 
 
 #FooterBar{
-  
    width: 100%;
   background-color: #020000;
   padding: 0px;
   margin-bottom: 0px;
   position: absolute;
-  bottom: -205px;
-  
-
- 
-
+  bottom: 0;
 }
 .highScore{
     color:rgb(255, 255, 255);
