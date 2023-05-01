@@ -16,7 +16,7 @@
     }
     
     h1 {
-        color: azure;
+        color: rgb(255, 255, 255);
         text-align: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
         font-size: 350%;
@@ -103,11 +103,12 @@ body {
 }
 
 h1 {
-    color: azure;
+    color: rgb(255, 255, 255);
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-    font-size: 400%;
+    font-size: 310%;
     margin-bottom: 40px;
+
 }
 p{
     color: azure;
@@ -246,12 +247,17 @@ padding-inline: 51px;
 } 
 
 #FooterBar{
-   width: 100%;
+  width: 100%;
   background-color: #020000;
-  padding: 0px;
+  padding: 0vh;
+  height: 60px;
   margin-bottom: 0px;
   position: absolute;
   bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .highScore{
     color:rgb(255, 255, 255);
