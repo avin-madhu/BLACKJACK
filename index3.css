@@ -90,18 +90,9 @@
     
 }
 
-
-@media screen and (max-width:400px)
-  {
-     body{
-      background-image: url("bgPhone.jpg");
-     }
-  }
-
 /* ------------for phone------------ */
 
 body {
-    background-image: url("bgDesk.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -292,7 +283,7 @@ body {
   /* Background image for phone */
   @media only screen and (max-width: 767px) {
     body {
-      background-image: url("bgPhone.jpg");
+      background-image: linear-gradient(top to bottom, black to rgb(107, 107, 255));
       background-size: 100%;
     }
   }
