@@ -1,6 +1,6 @@
 # BlackJack-Game
 
-A blackjackgame based on html,css and js
+A simple blackjackgame based on html,css and js
 
 
 ### Current status: in progress
